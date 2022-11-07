@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 """
-This module is used configurate the hierarchy of the directories of the project so the
-scripts inside a specific directory can use the ones located at the parent directory as
-packages.
+This module is used to create a logger object specific to the function in which
+the function_logger function it's called.
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, either version 3 of the License, or (at your option) any later
