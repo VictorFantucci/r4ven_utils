@@ -4,18 +4,16 @@
 
 -----------------
 
-# r4ven: The companion that holds your grab-bag of utility functions and objects
-
-> Reimplementing utilities folder across multiple Python projects... Nevermore!
+# r4ven_utils: Reimplementing utilities folder across multiple Python projects... Nevermore!
 
 -----------------
 
 ## What is it?
 
-**r4ven** is all of those of utilities you keep reimplementing across your Python projects, that all got together and decided to live in harmony.
+**r4ven_utils** is all of those of utilities you keep reimplementing across your Python projects, that all got together and decided to live in harmony.
 
 ## Main Features
-Here are some of the utilities that r4ven keep under it's wings:
+Here are some of the utilities that r4ven_utils keep under it's wings:
 
   - [**log4me**][log-4-me] - Creation of a logger object specific to the function in which it's called.
 
@@ -52,9 +50,9 @@ All my scripts have very detailed docstrings and comments that make their use in
 Over many a quaint and curious volume of forgotten lore...*"<br>
 *Edgar Allan Poe*
 
-This is how I felt every time I needed re-implement utilities folders over and over again through my Python projects... so work on ``r4ven`` started as an idea to gather all the scripts, code and functions that were constantly appearing in the utilities folder of my Python projects.
+This is how I felt every time I needed re-implement utilities folders over and over again through my Python projects... so work on ``r4ven_utils`` started as an idea to gather all the scripts, code and functions that were constantly appearing in the utilities folder of my Python projects.
 
-## Contributing to r4ven
+## Contributing to r4ven_utils
 
 All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
 
