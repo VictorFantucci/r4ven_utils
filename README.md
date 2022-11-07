@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/VictorFantucci/r4ven_utils_dev/tree/main/imgs/r4ven_logo.png"><br>
+  <img src="imgs/r4ven_logo.png"><br>
 </div>
 
 -----------------
