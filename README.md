@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="imgs/r4ven_logo.png"><br>
+  <img src="https://github.com/VictorFantucci/r4ven_utils_dev/tree/main/imgs/r4ven_logo.png"><br>
 </div>
 
 -----------------
@@ -12,7 +12,7 @@
 
 ## What is it?
 
-**r4ven_utils** is all of those of utilities you keep reimplementing across your Python projects, that all got together and decided to live in harmony.
+**r4ven** is all of those of utilities you keep reimplementing across your Python projects, that all got together and decided to live in harmony.
 
 ## Main Features
 Here are some of the utilities that r4ven keep under it's wings:
