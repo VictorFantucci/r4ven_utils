@@ -1,23 +1,6 @@
-#!/usr/bin/env python
-"""Test module of the log4me package.
-This module tests the function_logger() function from log4me.py
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option) any later
-version.
-This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-You should have received a copy of the GNU General Public License along with
-this program. If not, see <http://www.gnu.org/licenses/>.
 """
-
-__author__ = "Victor Vinci Fantucci"
-__email__ = "victor.v.fantucci@gmail.com"
-__date__ = "2022/10/30"
-__deprecated__ = False
-__license__ = "GPLv3"
-__maintainer__ = "VictorFantucci"
+Test script for my logging related functions.
+"""
 
 import os
 import sys
@@ -33,6 +16,10 @@ sys.path.append(parent_directory)
 
 # Import the main function [function_logger()] from function_logger.py
 from r4ven_utils.log4me import function_logger
+
+# Get the base name of the script file (excluding the '.py' extension) using os.path.basename
+# and remove the '.py' suffix from the obtained base name.
+script_name = os.path.basename(__file__).removesuffix(".py")
 
 # Import logging module to get the logging.levels constants.
 import logging
@@ -108,7 +95,7 @@ def f1() -> None:
                 The function shouldn't write any message to the console, because there isn't any
                 logging level assigned to the console_level variable.
     """
-    f1_logger = function_logger(file_level = logging.DEBUG)
+    f1_logger = function_logger(script_name = script_name, file_level = logging.DEBUG)
     f1_logger.debug("f1 Debug message")
     f1_logger.info("f1 Information message")
     f1_logger.warning("f1 Warning message")
@@ -133,7 +120,8 @@ def f2() -> None:
                 The function should write all logging levels with priority equal or above INFO
                 to the console.
     """
-    f2_logger = function_logger(file_mode = "a",
+    f2_logger = function_logger(script_name = script_name,
+                                file_mode = "a",
                                 file_level = logging.WARNING,
                                 console_level = logging.INFO)
     f2_logger.debug("f2 Debug message")
